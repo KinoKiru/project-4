@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Logins>
+    <login>
+        <email>ybakker@gmail.com</email>
+        <username>Yb01</username>
+        <wachtwoord>yb01</wachtwoord>
+    </login>
+    <login>
+        <email>ybaker@gmail.com</email>
+        <username>yb02</username>
+        <wachtwoord>yb02</wachtwoord>
+    </login>
+    <login>
+        <email>test1@gmail.com</email>
+        <username>test01</username>
+        <wachtwoord>test01</wachtwoord>
+    </login>
+    <login>
+        <email>balzak@gmail.com</email>
+        <username>test02</username>
+        <wachtwoord>test02</wachtwoord>
+    </login>
+</Logins>
