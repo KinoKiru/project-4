@@ -18,6 +18,11 @@ namespace ProjectBackend
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Laat de user inloggen zolang alle info klopt
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLogin_Click(object sender, EventArgs e)
         {
             gegevens = LoginDB.GetLogin();

@@ -70,7 +70,7 @@ namespace ProjectBackend
         /// <param name="countryhome">de naam van de home team</param>
         /// <param name="countryaway">de naam van de away team</param>
         /// <param name="scorehome">de aantal punten van het home team</param>
-        /// <param name="scoreaway">de aantal punten van het away team</param>
+        /// <param name="scoreaway">de aantal punten van het away team</param> 
         public Game(string countryhome, string countryaway, int scorehome, int scoreaway)
         {
             this.countryhome = countryhome;

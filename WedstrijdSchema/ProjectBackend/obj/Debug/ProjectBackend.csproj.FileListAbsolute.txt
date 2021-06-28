@@ -1,7 +1,6 @@
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\bin\Debug\ProjectBackend.exe.config
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\bin\Debug\ProjectBackend.exe
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\bin\Debug\ProjectBackend.pdb
-C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.csprojAssemblyReference.cache
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.frmLogin.resources
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.frmRegistreer.resources
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.Properties.Resources.resources
@@ -12,3 +11,4 @@ C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\Wedstrijd
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.frmHome.resources
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.frmLanden.resources
 C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.frmScoreAdd.resources
+C:\Users\thoma\OneDrive - ROC van Twente\ROC\Schoolprojecten\Project 4\WedstrijdSchema\ProjectBackend\obj\Debug\ProjectBackend.csprojAssemblyReference.cache

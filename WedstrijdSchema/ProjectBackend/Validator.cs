@@ -23,6 +23,11 @@ namespace ProjectBackend
 			}
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="textBox"></param>
+		/// <returns></returns>
 		public static bool IsPresent(TextBox textBox)
 		{
 			if (textBox.Text == "")
@@ -33,7 +38,12 @@ namespace ProjectBackend
 			}
 			return true;
 		}
-
+	
+		/// <summary>
+		/// Checkt of de value een decimaal is
+		/// </summary>
+		/// <param name="textBox"></param>
+		/// <returns></returns>
 		public static bool IsDecimal(TextBox textBox)
 		{
 			decimal number = 0m;
@@ -49,7 +59,11 @@ namespace ProjectBackend
 			}
 		}
 
-		// The IsInt32 and IsWithinRange methods were omitted from figure 12-15.
+/// <summary>
+/// Checkt of de value een int value is
+/// </summary>
+/// <param name="textBox"></param>
+/// <returns></returns>
 		public static bool IsInt32(TextBox textBox)
 		{
 			int number = 0;
@@ -65,6 +79,13 @@ namespace ProjectBackend
 			}
 		}
 
+		/// <summary>
+		/// checkt of de gegeven value binnen de min en max valt
+		/// </summary>
+		/// <param name="textBox">txtbox met de value</param>
+		/// <param name="min">min value</param>
+		/// <param name="max">max value</param>
+		/// <returns></returns>
 		public static bool IsWithinRange(TextBox textBox, decimal min, decimal max)
 		{
 			decimal number = Convert.ToDecimal(textBox.Text);
@@ -78,6 +99,11 @@ namespace ProjectBackend
 			return true;
 		}
 
+		/// <summary>
+		/// checkt of de textbox een email is
+		/// </summary>
+		/// <param name="textbox"></param>
+		/// <returns></returns>
 		public static bool IsValidEmail(TextBox textbox)
 		{
 

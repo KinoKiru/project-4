@@ -12,6 +12,10 @@ namespace ProjectBackend
     {
         private const string Path = @"..\..\login.xml";
 
+        /// <summary>
+        /// Haalt de logins op 
+        /// </summary>
+        /// <returns>list met type login</returns>
         public static List<login> GetLogin()
         {
             List<login> customers = new List<login>();
@@ -24,8 +28,8 @@ namespace ProjectBackend
 
             if (xmlIn.ReadToDescendant("login"))
             {
-                // maakt een customer aan, gooit vervolgens de dingen die hij kan lezen in de xml
-                // in de customer en blijft dit doen todat er geen meer is 
+                // maakt een login aan, gooit vervolgens de dingen die hij kan lezen in de xml
+                // in de login en blijft dit doen todat er geen meer is 
                 do
                 {
                     login login = new login();
@@ -46,6 +50,10 @@ namespace ProjectBackend
 
             return customers;
         }
+        /// <summary>
+        /// hiermee save je nieuwe logins
+        /// </summary>
+        /// <param name="logins">list van logins</param>
         public static void SaveLogin(List<login> logins)
         {
             // create the XmlWriterSettings object

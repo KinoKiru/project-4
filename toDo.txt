@@ -1,0 +1,2 @@
+Alle code voorzien van betere commentaar, eventueel nog ff de fase 2
+Frontend???

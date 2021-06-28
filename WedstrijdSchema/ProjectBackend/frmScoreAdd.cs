@@ -18,17 +18,19 @@ namespace ProjectBackend
         List<string> Landen;
         login user;
 
-        public frmScoreAdd(string thuis, string away, List<Game> games, login user, List<string> landen)
+        public frmScoreAdd(string thuis, string away, List<Game> Matches, login user, List<string> landen)
         {
             InitializeComponent();
             this.Home = thuis;
             this.Away = away;
-            label1.Text = thuis;
-            label2.Text = away;
-            this.gamesList = games;
+            this.gamesList = Matches;
             this.user = user;
             this.Landen = landen;
+
+            label1.Text = thuis;
+            label2.Text = away;
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -36,26 +38,48 @@ namespace ProjectBackend
             {
                 int scoreAway = Convert.ToInt32(textBox2.Text);
                 int scoreHome = Convert.ToInt32(textBox1.Text);
-                Game game = new Game(Home, Away,scoreHome, scoreAway);
-                gamesList = new List<Game>();
-                gamesList.Add(game);
-                this.Close();
+                if (scoreAway < 0 || scoreHome < 0) { MessageBox.Show("Score kan niet onder de nul zijn", "out of bounds Error"); }
+                else{
+                    if (gamesList != null)
+                    {
+                        Game game = new Game(Home, Away, scoreHome, scoreAway);
+                        gamesList.Add(game);
+                    }
+                    else
+                    {
+                        gamesList = new List<Game>();
+                        Game game = new Game(Home, Away, scoreHome, scoreAway);
+                        gamesList.Add(game);
+                    }
 
+                    frmHome frmHome = new frmHome(user, Landen, gamesList);
+                    frmHome.Show();
+                    frmHome.FillTextBoxen();
+
+                    this.Hide();
+                }
             }
-
-
         }
 
+        /// <summary>
+        /// checkt de textboxen of er een int getal in zit
+        /// </summary>
+        /// <returns>True or False</returns>
         private bool IsValidData()
         {
             return Validator.IsInt32(textBox1) && Validator.IsInt32(textBox2);
         }
 
+        /// <summary>
+        /// Voordat de form closed roep ik nog de home aan en show ik die
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmScoreAdd_FormClosing(object sender, FormClosingEventArgs e)
         {
             frmHome frmHome = new frmHome(user, Landen, gamesList);
-            frmHome.Show();
-            frmHome.FillTextBoxen();
+                    frmHome.Show();
+                    frmHome.FillTextBoxen();
         }
     }
 }

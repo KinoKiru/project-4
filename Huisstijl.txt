@@ -1,0 +1,22 @@
+•Lettertype 
+Familie nSimSum
+Grootte: 16px (body text), 20px (titles, kopjes ect/)
+Stijl: (zwart/grijs op wit)
+Kleur: Wit
+
+•Kleuren:
+Achtergronden: grijs(HEX = #31373E, RGB(49, 55, 62))
+Afbeeldingen: Header(Foto van mijzelf *moet bij maken van website beslissen welke komt een lichte blur en/of greyscale erop zodat de text beter te zien is*).
+Pictogrammen: geen
+Ornamenten (lijnen, badges e.d.): geen
+
+•Knoppen:
+Stijl: Navbar(Zwart donkerder dan de body), cards (logo van de platform anders primary) 
+Kleur: Navbar(HEX = #373737, RGB(55, 55, 55)), Cards(HEX = #007BFF , RGB(0, 123, 255));
+Effecten: Navbar/dropdown(Stuurt je naar de pagina waar je op klikt), Cards(Stuurt je naar de github of naar de website waar de content staat)
+
+•Logo: is er niet
+
+•Banner: foto met greyscale en mischien met blur, en in de rechter onder hoek text in het wit
+
+•Footer: alleen op Over Mij(een footer met een contact form)

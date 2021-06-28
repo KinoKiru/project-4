@@ -69,6 +69,8 @@ namespace ProjectBackend
             this.txtR3T1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnVulScore = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,7 +112,7 @@ namespace ProjectBackend
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 74);
+            this.label1.Location = new System.Drawing.Point(13, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 13;
@@ -128,7 +130,7 @@ namespace ProjectBackend
             // 
             // txtR1T1
             // 
-            this.txtR1T1.Location = new System.Drawing.Point(13, 90);
+            this.txtR1T1.Location = new System.Drawing.Point(13, 108);
             this.txtR1T1.Name = "txtR1T1";
             this.txtR1T1.ReadOnly = true;
             this.txtR1T1.Size = new System.Drawing.Size(100, 20);
@@ -136,23 +138,23 @@ namespace ProjectBackend
             // 
             // tbR1S1
             // 
-            this.tbR1S1.Location = new System.Drawing.Point(119, 90);
+            this.tbR1S1.Location = new System.Drawing.Point(119, 108);
             this.tbR1S1.Name = "tbR1S1";
             this.tbR1S1.ReadOnly = true;
             this.tbR1S1.Size = new System.Drawing.Size(22, 20);
-            this.tbR1S1.TabIndex = 16;
+            this.tbR1S1.TabIndex = 12;
             // 
             // tbR1S2
             // 
-            this.tbR1S2.Location = new System.Drawing.Point(265, 90);
+            this.tbR1S2.Location = new System.Drawing.Point(265, 108);
             this.tbR1S2.Name = "tbR1S2";
             this.tbR1S2.ReadOnly = true;
             this.tbR1S2.Size = new System.Drawing.Size(22, 20);
-            this.tbR1S2.TabIndex = 18;
+            this.tbR1S2.TabIndex = 13;
             // 
             // txtR1T2
             // 
-            this.txtR1T2.Location = new System.Drawing.Point(159, 90);
+            this.txtR1T2.Location = new System.Drawing.Point(159, 108);
             this.txtR1T2.Name = "txtR1T2";
             this.txtR1T2.ReadOnly = true;
             this.txtR1T2.Size = new System.Drawing.Size(100, 20);
@@ -161,7 +163,7 @@ namespace ProjectBackend
             // rbPot1
             // 
             this.rbPot1.AutoSize = true;
-            this.rbPot1.Location = new System.Drawing.Point(305, 91);
+            this.rbPot1.Location = new System.Drawing.Point(305, 109);
             this.rbPot1.Name = "rbPot1";
             this.rbPot1.Size = new System.Drawing.Size(14, 13);
             this.rbPot1.TabIndex = 19;
@@ -172,7 +174,7 @@ namespace ProjectBackend
             // rbPot2
             // 
             this.rbPot2.AutoSize = true;
-            this.rbPot2.Location = new System.Drawing.Point(305, 117);
+            this.rbPot2.Location = new System.Drawing.Point(305, 135);
             this.rbPot2.Name = "rbPot2";
             this.rbPot2.Size = new System.Drawing.Size(14, 13);
             this.rbPot2.TabIndex = 24;
@@ -182,15 +184,15 @@ namespace ProjectBackend
             // 
             // tbR1S4
             // 
-            this.tbR1S4.Location = new System.Drawing.Point(265, 116);
+            this.tbR1S4.Location = new System.Drawing.Point(265, 134);
             this.tbR1S4.Name = "tbR1S4";
             this.tbR1S4.ReadOnly = true;
             this.tbR1S4.Size = new System.Drawing.Size(22, 20);
-            this.tbR1S4.TabIndex = 23;
+            this.tbR1S4.TabIndex = 15;
             // 
             // txtR1T4
             // 
-            this.txtR1T4.Location = new System.Drawing.Point(159, 116);
+            this.txtR1T4.Location = new System.Drawing.Point(159, 134);
             this.txtR1T4.Name = "txtR1T4";
             this.txtR1T4.ReadOnly = true;
             this.txtR1T4.Size = new System.Drawing.Size(100, 20);
@@ -198,15 +200,15 @@ namespace ProjectBackend
             // 
             // tbR1S3
             // 
-            this.tbR1S3.Location = new System.Drawing.Point(119, 116);
+            this.tbR1S3.Location = new System.Drawing.Point(119, 134);
             this.tbR1S3.Name = "tbR1S3";
             this.tbR1S3.ReadOnly = true;
             this.tbR1S3.Size = new System.Drawing.Size(22, 20);
-            this.tbR1S3.TabIndex = 21;
+            this.tbR1S3.TabIndex = 14;
             // 
             // txtR1T3
             // 
-            this.txtR1T3.Location = new System.Drawing.Point(13, 116);
+            this.txtR1T3.Location = new System.Drawing.Point(13, 134);
             this.txtR1T3.Name = "txtR1T3";
             this.txtR1T3.ReadOnly = true;
             this.txtR1T3.Size = new System.Drawing.Size(100, 20);
@@ -215,7 +217,7 @@ namespace ProjectBackend
             // rbPot4
             // 
             this.rbPot4.AutoSize = true;
-            this.rbPot4.Location = new System.Drawing.Point(309, 200);
+            this.rbPot4.Location = new System.Drawing.Point(309, 218);
             this.rbPot4.Name = "rbPot4";
             this.rbPot4.Size = new System.Drawing.Size(14, 13);
             this.rbPot4.TabIndex = 35;
@@ -225,15 +227,15 @@ namespace ProjectBackend
             // 
             // tbR2S4
             // 
-            this.tbR2S4.Location = new System.Drawing.Point(269, 199);
+            this.tbR2S4.Location = new System.Drawing.Point(269, 217);
             this.tbR2S4.Name = "tbR2S4";
             this.tbR2S4.ReadOnly = true;
             this.tbR2S4.Size = new System.Drawing.Size(22, 20);
-            this.tbR2S4.TabIndex = 34;
+            this.tbR2S4.TabIndex = 19;
             // 
             // txtR2T4
             // 
-            this.txtR2T4.Location = new System.Drawing.Point(163, 199);
+            this.txtR2T4.Location = new System.Drawing.Point(163, 217);
             this.txtR2T4.Name = "txtR2T4";
             this.txtR2T4.ReadOnly = true;
             this.txtR2T4.Size = new System.Drawing.Size(100, 20);
@@ -241,15 +243,15 @@ namespace ProjectBackend
             // 
             // tbR2S3
             // 
-            this.tbR2S3.Location = new System.Drawing.Point(123, 199);
+            this.tbR2S3.Location = new System.Drawing.Point(123, 217);
             this.tbR2S3.Name = "tbR2S3";
             this.tbR2S3.ReadOnly = true;
             this.tbR2S3.Size = new System.Drawing.Size(22, 20);
-            this.tbR2S3.TabIndex = 32;
+            this.tbR2S3.TabIndex = 18;
             // 
             // txtR2T3
             // 
-            this.txtR2T3.Location = new System.Drawing.Point(17, 199);
+            this.txtR2T3.Location = new System.Drawing.Point(17, 217);
             this.txtR2T3.Name = "txtR2T3";
             this.txtR2T3.ReadOnly = true;
             this.txtR2T3.Size = new System.Drawing.Size(100, 20);
@@ -258,7 +260,7 @@ namespace ProjectBackend
             // rbPot3
             // 
             this.rbPot3.AutoSize = true;
-            this.rbPot3.Location = new System.Drawing.Point(309, 174);
+            this.rbPot3.Location = new System.Drawing.Point(309, 192);
             this.rbPot3.Name = "rbPot3";
             this.rbPot3.Size = new System.Drawing.Size(14, 13);
             this.rbPot3.TabIndex = 30;
@@ -268,15 +270,15 @@ namespace ProjectBackend
             // 
             // tbR2S2
             // 
-            this.tbR2S2.Location = new System.Drawing.Point(269, 173);
+            this.tbR2S2.Location = new System.Drawing.Point(269, 191);
             this.tbR2S2.Name = "tbR2S2";
             this.tbR2S2.ReadOnly = true;
             this.tbR2S2.Size = new System.Drawing.Size(22, 20);
-            this.tbR2S2.TabIndex = 29;
+            this.tbR2S2.TabIndex = 17;
             // 
             // txtR2T2
             // 
-            this.txtR2T2.Location = new System.Drawing.Point(163, 173);
+            this.txtR2T2.Location = new System.Drawing.Point(163, 191);
             this.txtR2T2.Name = "txtR2T2";
             this.txtR2T2.ReadOnly = true;
             this.txtR2T2.Size = new System.Drawing.Size(100, 20);
@@ -284,15 +286,15 @@ namespace ProjectBackend
             // 
             // tbR2S1
             // 
-            this.tbR2S1.Location = new System.Drawing.Point(123, 173);
+            this.tbR2S1.Location = new System.Drawing.Point(123, 191);
             this.tbR2S1.Name = "tbR2S1";
             this.tbR2S1.ReadOnly = true;
             this.tbR2S1.Size = new System.Drawing.Size(22, 20);
-            this.tbR2S1.TabIndex = 27;
+            this.tbR2S1.TabIndex = 16;
             // 
             // txtR2T1
             // 
-            this.txtR2T1.Location = new System.Drawing.Point(17, 173);
+            this.txtR2T1.Location = new System.Drawing.Point(17, 191);
             this.txtR2T1.Name = "txtR2T1";
             this.txtR2T1.ReadOnly = true;
             this.txtR2T1.Size = new System.Drawing.Size(100, 20);
@@ -301,7 +303,7 @@ namespace ProjectBackend
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 157);
+            this.label2.Location = new System.Drawing.Point(17, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 25;
@@ -310,7 +312,7 @@ namespace ProjectBackend
             // rbPot6
             // 
             this.rbPot6.AutoSize = true;
-            this.rbPot6.Location = new System.Drawing.Point(309, 282);
+            this.rbPot6.Location = new System.Drawing.Point(309, 300);
             this.rbPot6.Name = "rbPot6";
             this.rbPot6.Size = new System.Drawing.Size(14, 13);
             this.rbPot6.TabIndex = 46;
@@ -320,15 +322,15 @@ namespace ProjectBackend
             // 
             // tbR3S4
             // 
-            this.tbR3S4.Location = new System.Drawing.Point(269, 281);
+            this.tbR3S4.Location = new System.Drawing.Point(269, 299);
             this.tbR3S4.Name = "tbR3S4";
             this.tbR3S4.ReadOnly = true;
             this.tbR3S4.Size = new System.Drawing.Size(22, 20);
-            this.tbR3S4.TabIndex = 45;
+            this.tbR3S4.TabIndex = 23;
             // 
             // txtR3T4
             // 
-            this.txtR3T4.Location = new System.Drawing.Point(163, 281);
+            this.txtR3T4.Location = new System.Drawing.Point(163, 299);
             this.txtR3T4.Name = "txtR3T4";
             this.txtR3T4.ReadOnly = true;
             this.txtR3T4.Size = new System.Drawing.Size(100, 20);
@@ -336,15 +338,15 @@ namespace ProjectBackend
             // 
             // tbR3S3
             // 
-            this.tbR3S3.Location = new System.Drawing.Point(123, 281);
+            this.tbR3S3.Location = new System.Drawing.Point(123, 299);
             this.tbR3S3.Name = "tbR3S3";
             this.tbR3S3.ReadOnly = true;
             this.tbR3S3.Size = new System.Drawing.Size(22, 20);
-            this.tbR3S3.TabIndex = 43;
+            this.tbR3S3.TabIndex = 22;
             // 
             // txtR3T3
             // 
-            this.txtR3T3.Location = new System.Drawing.Point(17, 281);
+            this.txtR3T3.Location = new System.Drawing.Point(17, 299);
             this.txtR3T3.Name = "txtR3T3";
             this.txtR3T3.ReadOnly = true;
             this.txtR3T3.Size = new System.Drawing.Size(100, 20);
@@ -353,7 +355,7 @@ namespace ProjectBackend
             // rbPot5
             // 
             this.rbPot5.AutoSize = true;
-            this.rbPot5.Location = new System.Drawing.Point(309, 256);
+            this.rbPot5.Location = new System.Drawing.Point(309, 274);
             this.rbPot5.Name = "rbPot5";
             this.rbPot5.Size = new System.Drawing.Size(14, 13);
             this.rbPot5.TabIndex = 41;
@@ -363,15 +365,15 @@ namespace ProjectBackend
             // 
             // tbR3S2
             // 
-            this.tbR3S2.Location = new System.Drawing.Point(269, 255);
+            this.tbR3S2.Location = new System.Drawing.Point(269, 273);
             this.tbR3S2.Name = "tbR3S2";
             this.tbR3S2.ReadOnly = true;
             this.tbR3S2.Size = new System.Drawing.Size(22, 20);
-            this.tbR3S2.TabIndex = 40;
+            this.tbR3S2.TabIndex = 21;
             // 
             // txtR3T2
             // 
-            this.txtR3T2.Location = new System.Drawing.Point(163, 255);
+            this.txtR3T2.Location = new System.Drawing.Point(163, 273);
             this.txtR3T2.Name = "txtR3T2";
             this.txtR3T2.ReadOnly = true;
             this.txtR3T2.Size = new System.Drawing.Size(100, 20);
@@ -379,15 +381,15 @@ namespace ProjectBackend
             // 
             // tbR3S1
             // 
-            this.tbR3S1.Location = new System.Drawing.Point(123, 255);
+            this.tbR3S1.Location = new System.Drawing.Point(123, 273);
             this.tbR3S1.Name = "tbR3S1";
             this.tbR3S1.ReadOnly = true;
             this.tbR3S1.Size = new System.Drawing.Size(22, 20);
-            this.tbR3S1.TabIndex = 38;
+            this.tbR3S1.TabIndex = 20;
             // 
             // txtR3T1
             // 
-            this.txtR3T1.Location = new System.Drawing.Point(17, 255);
+            this.txtR3T1.Location = new System.Drawing.Point(17, 273);
             this.txtR3T1.Name = "txtR3T1";
             this.txtR3T1.ReadOnly = true;
             this.txtR3T1.Size = new System.Drawing.Size(100, 20);
@@ -396,7 +398,7 @@ namespace ProjectBackend
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 239);
+            this.label3.Location = new System.Drawing.Point(17, 257);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 36;
@@ -404,7 +406,7 @@ namespace ProjectBackend
             // 
             // btnVulScore
             // 
-            this.btnVulScore.Location = new System.Drawing.Point(16, 337);
+            this.btnVulScore.Location = new System.Drawing.Point(17, 328);
             this.btnVulScore.Name = "btnVulScore";
             this.btnVulScore.Size = new System.Drawing.Size(104, 23);
             this.btnVulScore.TabIndex = 47;
@@ -412,11 +414,31 @@ namespace ProjectBackend
             this.btnVulScore.UseVisualStyleBackColor = true;
             this.btnVulScore.Click += new System.EventHandler(this.btnVulScore_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 181;
+            this.label4.Text = "Home";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(156, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 182;
+            this.label5.Text = "Away";
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtR2T2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVulScore);
@@ -508,5 +530,7 @@ namespace ProjectBackend
         private System.Windows.Forms.TextBox txtR3T1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnVulScore;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

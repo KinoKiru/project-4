@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,8 +18,9 @@ namespace ProjectBackend
 
         //volgorde van de games die gespeeld moeten worden
         int[] test = {0,1,2,3,0,2,1,3,0,3,1,2};
+        //wordt gebruikt voor de filltextbox methode
         int index = 0;
-        int puntenIndex = 0;
+ 
 
         public frmHome(login klant = null, List<string> landen = null, List<Game> games = null)
         {
@@ -28,6 +29,7 @@ namespace ProjectBackend
             this.landen = landen;
             this.matches = games;
         }
+
         private void frmHome_Load(object sender, EventArgs e)
         {
             btnWelcomeUser.Text = user.Usernname;
@@ -42,53 +44,20 @@ namespace ProjectBackend
 
         private void btnPlannen_Click(object sender, EventArgs e)
         {
-            FillTextBoxen();
+            if (landen == null) { MessageBox.Show("er zijn nog geen matches en/of landen toegevoegd!"); }
+            else if (landen.Count < 4) { MessageBox.Show("Er zijn geen 4 landen toegevoegd", "Index out of range"); }
+            else { FillTextBoxen(); }
         }
 
+     
         /// <summary>
-        /// Vult alle textboxen met de teams
+        /// Algemene event voor de radio buttons die je dan doorsturen naar de addscore form
         /// </summary>
-        public void FillTextBoxen() 
-        {
-            try
-            {
-                if (landen == null)
-                {
-                    MessageBox.Show("er zijn geen landen te vullen", "Landen Null");
-                }
-                else 
-                {
-                    foreach (Control cntrl in this.Controls)
-                    {
-                        if (index < 12)
-                        {
-                            if (cntrl is TextBox)
-                            {
-                                if (cntrl.Name.StartsWith("txt"))
-                                {
-                                    while (cntrl.TabIndex != index) { index++; }
-                                    if (cntrl.TabIndex == index)
-                                    { 
-                                            cntrl.Text = landen[test[index]];
-                                            index = 0;
-                                        
-                                    }
-                                }
-                            }
-                        }
-                        else { index = 0; }
-                    }
-                }
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Geklikt(object sender, EventArgs e)
         {
+          
             try
             {
                 if (rbPot1.Checked)
@@ -129,48 +98,90 @@ namespace ProjectBackend
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-            finally { FillTextBoxen(); }
- 
-
         }
 
         private void btnVulScore_Click(object sender, EventArgs e)
         {
-            FillScore(); 
+            if (landen == null)
+            {
+                MessageBox.Show("er zijn geen landen te vullen", "Landen Null");
+            }
+            else if (landen.Count < 4)
+            {
+                MessageBox.Show("Er zijn geen 4 landen toegevoegd", "Index out of range");
+
+            }
+            else 
+            {
+                FillScore();
+            }
         }
 
+
         #region Methodes
+
+        /// <summary>
+        /// Vult de textboxen met de score
+        /// </summary>
         private void FillScore() 
         {
-
             try
             {
                 if (matches == null) { MessageBox.Show("Er zijn nog geen matches gemaakt!", "Null Error"); }
+                else if (matches.Count < 6) { MessageBox.Show("Er zijn nog geen 6 matches gemaakt!", "Index Error"); }
+                else {
+                    tbR1S1.Text = matches[0].ScoreHome.ToString();
+                    tbR1S2.Text = matches[0].ScoreAway.ToString();
+                    tbR1S3.Text = matches[1].ScoreHome.ToString();
+                    tbR1S4.Text = matches[1].ScoreAway.ToString();
 
-                foreach (Control cntrl in this.Controls)
-                {
-                    if (puntenIndex < 6)
-                    {
-                        if (cntrl is TextBox && cntrl.Name.StartsWith("tb"))
-                        {
-                            while (cntrl.TabIndex != puntenIndex) { puntenIndex++; }
-                            if (cntrl.TabIndex == puntenIndex)
-                            {
-                                if (index % 2 == 0) { cntrl.Text = matches[puntenIndex].ScoreAway.ToString(); }
-                                else { cntrl.Text = matches[puntenIndex].ScoreHome.ToString(); }
-                            }
-                        }
-                    }
-                    else { puntenIndex = 0; }
+                    tbR2S1.Text = matches[2].ScoreHome.ToString();
+                    tbR2S2.Text = matches[2].ScoreAway.ToString();
+                    tbR2S3.Text = matches[3].ScoreHome.ToString();
+                    tbR2S4.Text = matches[3].ScoreAway.ToString();
 
+                    tbR3S1.Text = matches[4].ScoreHome.ToString();
+                    tbR3S2.Text = matches[4].ScoreAway.ToString();
+                    tbR3S3.Text = matches[5].ScoreHome.ToString();
+                    tbR3S4.Text = matches[5].ScoreAway.ToString();
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-          
-
         }
 
 
+
+        /// <summary>
+        /// Vult alle textboxen met de teams
+        /// </summary>
+        public void FillTextBoxen()
+        {
+            try
+            {
+                foreach (Control cntrl in this.Controls)
+                {
+                    if (index < 12)
+                    {
+                        if (cntrl is TextBox && cntrl.Name.StartsWith("txt"))
+                        {
+                            while (cntrl.TabIndex != index) { index++; }
+                            if (cntrl.TabIndex == index)
+                            {
+                                cntrl.Text = landen[test[index]];
+                                index = 0;
+
+                            }
+                        }
+                    }
+                    else { index = 0; }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         #endregion
 

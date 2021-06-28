@@ -90,6 +90,7 @@ namespace ProjectBackend
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "frmScoreAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Score toevoegen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmScoreAdd_FormClosing);
             this.ResumeLayout(false);

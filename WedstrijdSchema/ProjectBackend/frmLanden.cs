@@ -63,11 +63,10 @@ namespace ProjectBackend
         /// <summary>
         /// check de textbox of er wel wat in zit
         /// </summary>
-        /// <returns></returns>
+        /// <returns>true / false</returns>
         private bool IsValidData()
         {
-            return Validator.IsPresent(txtLand);
-                   
+            return Validator.IsPresent(txtLand);        
         } 
     }
 }

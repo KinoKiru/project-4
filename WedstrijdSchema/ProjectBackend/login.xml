@@ -20,4 +20,9 @@
         <username>test02</username>
         <wachtwoord>test02</wachtwoord>
     </login>
+    <login>
+        <email>dasdad@gmail.com</email>
+        <username>habs</username>
+        <wachtwoord>habs</wachtwoord>
+    </login>
 </Logins>

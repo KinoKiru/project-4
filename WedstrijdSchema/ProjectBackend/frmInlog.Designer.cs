@@ -63,6 +63,7 @@ namespace ProjectBackend
             this.txtWachtwoord.PasswordChar = '*';
             this.txtWachtwoord.Size = new System.Drawing.Size(100, 20);
             this.txtWachtwoord.TabIndex = 9;
+            this.txtWachtwoord.Text = "yb02";
             // 
             // txtUserName
             // 
@@ -70,6 +71,7 @@ namespace ProjectBackend
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 20);
             this.txtUserName.TabIndex = 8;
+            this.txtUserName.Text = "yb02";
             // 
             // btnRegistreer
             // 
