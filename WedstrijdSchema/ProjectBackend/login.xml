@@ -16,7 +16,7 @@
         <wachtwoord>test01</wachtwoord>
     </login>
     <login>
-        <email>balzak@gmail.com</email>
+        <email>has@gmail.com</email>
         <username>test02</username>
         <wachtwoord>test02</wachtwoord>
     </login>
@@ -24,5 +24,10 @@
         <email>dasdad@gmail.com</email>
         <username>habs</username>
         <wachtwoord>habs</wachtwoord>
+    </login>
+    <login>
+        <email>youri@gmail.com</email>
+        <username>yb03</username>
+        <wachtwoord>yb03</wachtwoord>
     </login>
 </Logins>
